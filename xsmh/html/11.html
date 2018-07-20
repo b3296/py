@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>那天，我上门</title>
+    <link href="/Asset/css/swiper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Asset/css/style.min.css">
+    <script src="/Asset/js/novel.js"></script>
+    <script src="/Asset/js/cookies.js"></script>
+    <script type="text/javascript">
+    if (self != top) {
+        top.location.href=self.location.href;
+    }
+    var req_time = '30',page_start_time=+(new Date),page_end_time=page_start_time;
+    </script>
+    <meta name="viewport" content="designWidth=750,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 防止加载lib.flexible加载的时候文字由大变小的闪烁 -->
+    <style>
+        html, body {
+            font-size: 12px;
+        }
+    </style>
+    <!-- lib.flexible 移动端相对适应比例 必须在浏览器head类 -->
+    <script type="text/javascript">
+    !function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) {  var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + 1 + ", maximum-scale=" + 1 + ", minimum-scale=" + 1 + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+    </script>
+    <script type="text/javascript" src="/Asset/js/jquery.js"></script>
+    <script src="/Asset/js/swiper.min.js"></script>
+    <script src="/Asset/js/mui.min.js"></script>
+    <style type="text/css">
+      #banner-container { display: block; position: relative; z-index: 1; width: 100%; overflow: hidden; }
+      #banner-container .loading { display: block; width: 70px; text-align: center; font-size: 0; position: absolute; top: 50%; left: 50%; -webkit-transform: translate3d(-50%,-50%,0); transform: translate3d(-50%,-50%,0); }
+      #banner-container .loading .item { width: 18px; height: 18px; margin: 0 2px; background-color: #333333; border-radius: 100%; display: inline-block; -webkit-animation: loading-delay 1.4s infinite ease-in-out; animation: loading-delay 1.4s infinite ease-in-out; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+      #banner-container .loading .item:nth-child(2) { -webkit-animation-delay: -0.16s; animation-delay: -0.16s; }
+      #banner-container .loading .item:nth-child(3) { -webkit-animation-delay: -0.32s; animation-delay: -0.32s; }
+      @-webkit-keyframes loading-delay {
+          0%,80%,100% {
+              -webkit-transform: scale(0);
+          }
+          40% {
+              -webkit-transform: scale(1);
+          }
+      }
+      @keyframes loading-delay {
+          0%,80%,100% {
+              transform: scale(0);
+              -webkit-transform: scale(0);
+          }
+          40% {
+              transform: scale(1);
+              -webkit-transform: scale(1);
+          }
+      }
+    </style>
+</head>
+<body style="font-size: 12px;">
+
+    
+<style>
+    img {
+        max-width: 100%;
+        font-size: inherit;
+        line-height: 32px;
+        text-indent: 2em;
+        font-family: 微软雅黑;
+        display: block;
+        /*小说和漫画是不同的*/
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+    }
+    .novel p {
+        text-indent:2em;padding-top:4px;padding-bottom:4px;font-size:17px;line-height:32px;  
+    }
+</style>
+    <div class="rt-bar flt" style="position: fixed;">
+        <div class="row">
+            <div class="col icon">
+                <a href="/Home/NovelIndex?NovelId=64">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M29.56 39.47a2 2 0 0 1-1.38-.56L8.45 20 28.17 1.09A2 2 0 1 1 30.94 4L14.23 20l16.71 16a2 2 0 0 1-1.38 3.44z" fill="#ff730a"></path></svg>
+                </a>
+            </div>
+            <div class="col title">第十一章 江慕青</div>
+            <div class="col link">
+                <a href="/Home/NovelIndex?NovelId=64&isMenu=1">全集</a>
+            </div>
+        </div>
+    </div>
+        <div class="m-box novel" style="font-size: inherit;padding-right:10px;padding-left:10px;padding-top:60px;font-size:18px;">
+            <p>      第二天早上我起来，见到了一个陌生女人，她坐在客厅里，叫凌越仟做老爷，我心里十分的奇怪，这个女人到底是谁呢，看起来跟凌越仟的关系倒是不错，很亲密的样子，会是什么关系呢，我的心里对于这一点十分的好奇。    </p><p>    “她是谁呢，看起来跟爸的关系挺好的，是爸的朋友吗？”我偷偷的打字问凌晓晓道，凌晓晓看了我一眼，好像有些厌烦的样子，但还是跟我说了她的身份，原来她是凌越仟的二婚老婆，叫做江慕青，刚刚从国外旅游回来。    </p><p>    “我最看不惯的就是她，这个女人狠毒的要死，来到我们家就是来跟我争家产的，无论她跟你说什么你都不要理她，不然你就死定了！”凌晓晓打字跟我说道，从这些字里就可以看出她确实是十分的厌恶这个名叫江慕青的女人。    </p><p>    “哟，这位应该就是我们的姑爷吧，我听说他是个聋哑人呢，看来应该是听不到我说的话了，我本来还想要和他聊聊呢，不过跟聋哑人根本就不能沟通。”江慕青笑了一下说道，语气满是嘲讽的意味，让我有些生气，不过我还是忍住了没有发作。    </p><p>    “你想说什么就说，不用这么拐弯抹角的，我知道你想要嘲笑我，我才懒得理你！”凌晓晓冷冷的说道。    </p><p>    “晓晓你这是说的什么话呢，我怎么会嘲笑你呢，都是一家人，无论你嫁给什么人我都不会嘲笑你的，不过我听说这个姑爷好像是个聋哑人呢，要是以后生出来的孩子也是聋哑人的话那就麻烦了，咱们凌家的家业这么大，一个聋哑人怎么可能打理得过来呢，万一以后被坏人骗走了家产可就不好了！”江慕青笑着说道。    </p><p>    “你说什么，哼，聋哑人就聋哑人，那也比生不出来要好！”凌晓晓反驳道。    </p><p>    “晓晓，你说话注意点，别太过分了！”凌晓晓这话一出，凌越仟的脸色当即变得阴沉了起来，看来他还是知道这话其实是在嘲讽他们两个的。    </p><p>    我看着这江慕青也就28岁左右，和凌晓晓差不多大，年纪轻轻就生不出孩子真是可怜，心里想着豪门的圈子真的是太乱，不过我想生不出孩子主要并不是因为江慕青的关系，而是凌越仟太老的关系。    </p><p>    “哼！”凌晓晓冷哼了一声，转身就要离开这里，结果被凌越仟给叫住了。    </p><p>    “凌晓晓，你要去哪里！”凌越仟大声叫道，凌晓晓的身形果然停了下来。    </p><p>    “我想要出去走走，逛逛街，买买衣服什么的，怎么，连这个也不行吗？”凌晓晓回过头来说道。    </p><p>    “逛街买衣服，你别骗我了，你真当我老糊涂了吗，你肯定是又要去见那个吉米了是不是，我告诉你，你如果再去见那个吉米的话，我就找人打断她的腿，让她变成一个残疾人，我看你还喜不喜欢她！”凌越仟恶狠狠的说道，真是个狠角色，难怪能够白手起家打拼成一个亿万富翁。    </p><p>    “你敢，你要是真的那么做的话我就跟你断绝父女关系，我不会再承认有你这个爸爸了！”凌晓晓眼睛有些发红的说道，显然是有些被吓到了，我看了都觉得有些心疼，毕竟是我老婆，被吓成这个样子真是可怜。    </p><p>    “你说我敢不敢呢，我凌越仟打拼了这么多年，从一个什么都没有的傻小子变成现在一个大老板，你认为我连这点事情都做不出来吗，你如果不相信的话就尽管去找那个臭女人，我保证第二天就让她便残疾人！”凌越仟丝毫不留情的说道。    </p><p>    “好了老爷，晓晓她都知道错了，你就不要说这么可怕的事情了，你放心吧，晓晓她肯定会听你的话，不再去找那个女人了，你说是不是啊晓晓？”这个时候江慕青插嘴说道，虽然表面上看起来她好像是在帮凌晓晓，但我总感觉她有其他的目的，这个女人简直就像蛇蝎一样给人一种不寒而栗的感觉。    </p><p>    “我不用你替我说话，我不去就是了，凌越仟，我警告你，你如果真的去动吉米的话，我这辈子都不会原谅你的，你一定会失去我这个女儿！”凌晓晓说着，直接就跑到自己房间去了，我本来也想要跟去的，不过想了想觉得还是留下看看发展比较好。    </p><p>    “哼，这个女儿我真是白养了，早知道当初收养一个算了，肯定没有亲生的这么叛逆，真是气死我了！”凌越仟狠狠的一拍桌子，看样子真是被气得够呛的。    </p><p>    “老爷，你放宽心，别气坏了身子，不然的话多少钱都补不回来的，晓晓她也是年纪小，不懂事，不然的话也不会做出这种叛逆的事情的，你放心好了，等时间一到她自然就会回心转意的，肯定会知错的。”江慕青说道。    </p><p>    “哼，回心转意，她都二十好几了还小，我看她就算是到四十岁都不会回心转意，这个女儿我就当不要了，只要她给我生个孙子，其他我根本不想要管她了！”凌越仟冷冷的说道。    </p><p>    “对了，你去告诉那个哑巴，让他到我书房去一趟。”凌越仟喝了杯茶，然后对江慕青说道。    </p><p>    “好的老爷。”江慕青点了点头，就来到了我的面前，打字将凌越仟所说的话给重复了一遍，虽然对于凌越仟叫我哑巴的事情很生气，不过我还是点了点头。    </p><p>    凌越仟先走过去，然后我也跟了上去，到了书房，凌越仟就拿出一个平板电脑，在上面打了几行字，然后递给我看：“昨天的事情你做得很好，我很欣赏你，不愧是我的女婿，以后你就帮我盯着凌晓晓，不要让她乱来，你是个哑巴，她肯定不会怎么防备你的，之前那个诊断书我也知道是假的，你不用在意，我不会怀疑你的，不过我们也不用拆穿她。”    </p><p>    我看着这段话，心中不断的冷笑，这个凌越仟也是跟他女儿一样，表面一套心里一套，明明根本一点都看不起我，现在却又说得多么重视我，还是我是装哑巴的，不然的话真的被他蒙在鼓里，以为他真的对我多好。</p><p></p>
+        </div>
+    <div class="read-footer">
+        <div class="row">
+            <div class="col">
+                <a href="javascript:addMarker(64,11);" class="shelf " style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
+                    <i class="icon-fav"></i>收藏
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Home/NovelIndex?NovelId=64&isMenu=1" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
+                    <i class="icon-dir"></i>目录
+                </a>
+            </div>
+        </div>
+
+        <div class="control clearfix">
+            <div class="item prev">
+                <a href="/Home/Detail?NovelId=64&novelTitleNo=10&referralId="><i></i>上一话</a>
+            </div>
+            <div class="item next">
+                <a href="/Home/Detail?NovelId=64&novelTitleNo=12&referralId=">下一话<i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="rb-bar chapter-menu" style="">
+        <div class="row">
+            <div class="col">
+                <a href="/Home/Detail?NovelId=64&novelTitleNo=10&referralId=">上一话</a>
+            </div>
+            <div class="col">
+                <a href="javascript:addMarker(64,11)" class="shelf  "><i class="icon-fav"></i> 收藏</a>
+            </div>
+            <div class="col">
+                <a href="/Home/Detail?NovelId=64&novelTitleNo=12&referralId=">下一话<i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="circle-box">
+        <a onclick="howContinue()" class="portal">
+            <i class="icon-home"></i>
+            <div class="title">追书</div>
+        </a>
+        <a href="/home/report"  class="portal" style="margin-top: 5px; background-color: rgba(0,0,0,.0); background-image: url('../../Asset/images/png/reading_icon_jubao@2x.png'); background-position: center; background-repeat: no-repeat; background-size: 40px;"></a>
+    </div>
+<script src="/Content/wechat/js/layer.js"></script>
+<script type="text/javascript">
+
+    function howContinue() {
+        layer.open({
+            content: '<div style="text-align:center;"><p style="font-size:16px;">如何追书？</p>' +
+                '<div style="color:darkorange;font-size:14px;">关注作者授权公众号，方便下次阅读</div>' +
+                '<img width="100%" src="https://open.weixin.qq.com/qr/code?username=xiamumh"/>' +
+                '<div style="font-size:14px;">长按识别上方二维码关注</div></div>',
+            btn: '明天再说啦',
+            one: function (index) {
+                layer.close(index);
+            }
+        });
+    }
+
+    function addMarker(novelId, sectionNo) {
+        var is_gray_ = $(".shelf").hasClass("active");
+        $.post('/Home/AddMarkerJson?NovelId=' + novelId + '&novelTitleNo=' + sectionNo);
+        if (is_gray_) {
+            $(".shelf").removeClass("active");
+        }
+        else {
+            $(".shelf").addClass("active");
+        }
+    }
+    $(function () {
+        $('img').error(function () {
+            var $this = $(this);
+            $this.attr("onerror", "this.src = '" + $this.attr("src").replace('http://cgnovel.oss-cn-shanghai.aliyuncs.com', '') + "'");
+        });
+        //$("img").each(function () {
+        //    var $this = $(this);
+        //    $this.attr("onerror", "this.src = '" + $this.attr("src").replace('http://cgnovel.oss-cn-shanghai.aliyuncs.com','') + "'");
+        //})
+        var winSTbefore = 0;//声明一个变量，用于装触发scroll事件的上一个scrollTop
+        function monitor() {
+            var winH = window.innerHeight;    //获取浏览器窗口高度，若要支持IE需要在此处做兼容
+            var winST = $(window).scrollTop();  //获取scrollTop
+            var docH = $(document).height();  //获取文档高度
+            var arr = [winH, winST, docH];
+            return arr;
+        }
+        monitor();
+
+        $(window).scroll(function () {
+            var arr = monitor();
+            var winH = arr[0];
+            var winST = arr[1];
+            var docH = arr[2];
+            if (winST <= winH / 10) {
+                $('.chapter-menu').hide(); //在首屏时隐藏
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            } else if (winST + winH >= docH) {
+                $('.chapter-menu').hide(); //到达底部时隐藏
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            } else if (winST > winSTbefore) {
+                $('.chapter-menu').hide();    //向下滑动时隐藏
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            } else if (winST < winSTbefore) {
+                $('.chapter-menu').show(); //向上滑动时显示
+                $('.rt-bar').addClass('flt');
+                $('.rt-bar').css('position', 'fixed');
+            }
+            winSTbefore = winST;  //更新winSTbefore的值
+        });
+
+        $(document).click(function(){
+            var arr = monitor();
+            var winh = arr[0];
+            var winst = arr[1];
+            var doch = arr[2];
+            if (winst + winh >= doch) {
+                $('.chapter-menu').hide(); //到达底部时隐藏
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            }
+            else{
+                $('.chapter-menu').show(); //向上滑动时显示
+                $('.rt-bar').addClass('flt');
+                $('.rt-bar').css('position', 'fixed');
+            }
+        })
+
+        $(document).on("tap",function(){
+            var arr = monitor();
+            var winh = arr[0];
+            var winst = arr[1];
+            var doch = arr[2];
+            if (winst + winh >= doch) {
+                $('.chapter-menu').hide(); //到达底部时隐藏
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            }
+            else{
+                $('.chapter-menu').show(); //向上滑动时显示
+                $('.rt-bar').addClass('flt');
+                $('.rt-bar').css('position', 'fixed');
+            }
+        });
+
+
+        $('.show-menu').click(function () {
+            if ($('.rt-bar').hasClass('flt')) {
+                $('.chapter-menu').hide();
+                $('.rt-bar').removeClass('flt');
+                $('.rt-bar').css('position', 'absolute');
+            } else {
+                $('.chapter-menu').show();
+                $('.rt-bar').addClass('flt');
+                $('.rt-bar').css('position', 'fixed');
+            }
+        });
+
+        var clientWidth = document.body.clientWidth, loadNum = 0;
+        $(".holdplace").css('min-height', window.screen.height);
+    });
+
+    function Sign() {
+        var signDate = getCookie("signDate");
+        if (signDate != getCurDateStr()) {
+            //若今日未签到，则签到
+            $.post('/Home/SignJson', "", function (data) {
+                if (parseInt(data.code) == 0) {
+                    setCookie('signDate', getCurDateStr());
+                    layer.open({
+                        content: '<h5 style="text-align:center;color:#333333; margin-bottom:10px;">签到成功</h5><span style="font-size:14px;color:#888888;">签到成功！恭喜获得 ' + signCoin + ' 书币！</span>',
+                        btn: '我知道啦',
+                        one: function (index) {
+                            layer.close(index);
+                        }
+                    });
+                } else if (parseInt(data.code) == 1098) {
+                    setCookie('signDate', getCurDateStr());
+                }
+            });
+        }
+    }
+
+    //读取cookies 
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    function getCurDateStr() {
+        var date = new Date();
+        return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    }
+    $(function () {
+        Sign();
+        $.post("/Home/NovelView", { novelId: 64 });
+    });
+
+</script>
+
+
+    <div class="backtop" id="icon-top" style="display:none">
+        <a href="javascript:void(0);" class="top">顶部</a>
+    </div>
+
+    <script>
+        function bh_msg_tips(msg) {
+            var oMask = document.createElement("div");
+            oMask.id = "bh_msg_lay";
+            oMask.style.position = "fixed";
+            oMask.style.left = "0";
+            oMask.style.top = "50%";
+            oMask.style.zIndex = "100";
+            oMask.style.textAlign = "center";
+            oMask.style.width = "100%";
+            oMask.innerHTML = "<span style='background: rgba(0, 0, 0, 0.65);color: #fff;padding: 10px 15px;border-radius: 3px; font-size: 14px;'>" + msg
+                + "</span>"; document.body.appendChild(oMask);
+            setTimeout(function () {
+                $("#bh_msg_lay").remove();
+            }, 2000);
+        }
+
+    </script>
+    <!-- 统计 -->
+    
+</body>
+
+</html>
